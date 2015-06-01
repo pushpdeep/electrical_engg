@@ -1,0 +1,25 @@
+RC Circuit Low Pass 
+
+*resister between nodes 1,2
+R 1 2 100
+
+*declaring capacitor
+C 2 0 10u
+
+*declaring sinusoidal voltage 
+*v1 1 0 sin(0 50V 50)
+V1 1 0 PULSE(0V 50mV 0ms .1n .1n 10ms 20ms)
+
+*start the transient analysis
+.tran 0.1m 120m 80m
+
+*control statement for simulation
+.control
+*run the simulation
+run
+*plot the output curves of input signal, voltage across capacitor
+plot v(1) V(2)
+*end of the control statement
+.endc
+*end of the netlist
+.end

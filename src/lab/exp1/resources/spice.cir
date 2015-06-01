@@ -1,0 +1,30 @@
+DIODE I-V CURVE AT T=300K
+
+*declaring the model
+.MODEL DIO D( IS=1.8E-10 RS=2 BV=50.0 IBV=1e-4+ CJO=1e-12 M=0.333 N=2.06 TT=4.32e-9)
+*declaring the temperature in degree Celsius
+.TEMP 27
+
+* Resistive Load
+R1 1 2 100
+
+* Diode model
+D1 2 0 D
+
+* Voltage Source
+Vin 1 0 dc 5.0v
+
+* DC analysis: Vin is swept from 0.0V to 6.0V in steps of 0.05V
+
+.control 
+
+dc Vin 0.001 6 0.0001
+run
+*plot the curve between current and voltage at node 2
+plot -Vin#branch vs V(2) 
+plot ln(-Vin#branch) vs V(2)
+*end of the control statement
+.endc
+*end of the netlist
+.end
+

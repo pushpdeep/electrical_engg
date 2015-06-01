@@ -1,0 +1,593 @@
+<!-- This file needs to be edited by the lab developer to suit
+the requirements of their lab in particular.-->
+<!-- Add class="default" to include any element as it is
+specified in default.html. 
+Do not include class="default" to the elements that you want to
+edit -->
+<!DOCTYPE html>
+<html>
+<head>
+<script src="quiz.js"></script>
+    <title></title>
+</head>
+
+<body>
+    <div id="experiment">
+        <!-- The Experiment Document Container-->
+        <!-- The lab Header contains the logo and the name of the lab,
+  usually displayed on the top of the page-->
+
+        <header id="experiment-header">
+            <div class="logo" id="experiment-header-logo">
+            <!-- Enclose the logo image of your lab or write it in 
+      text-->
+            <img src="../images/logo.jpg"></div>
+
+            <div class="heading" id="experiment-header-heading">
+                <!-- Write the name of your lab and link it to the home 
+      page of your lab (h1 tag is preferred while writing your 
+      lab name)-->
+                <a href="../index.html">Electronics Devices and Circuits</a>
+            </div><!-- Add any additional element you want to add to the lab 
+    header, For example : Help (Enclosing them with suitable 
+    div is recommended)-->
+        </header><!-- The lab article is the main content area where all the 
+  experiment content sits-->
+
+        <article id="experiment-article">
+            <!-- The lab article has an header, optional navigational 
+    menu, number of sections, an optional sidebar and a closing 
+    footer-->
+            <div class="breadcrumb" id="experiment-article-breadcrumb"></div>
+		<!--vinay: i have changed the font size for header tag to fit the panel-->
+            <header class="heading" id="experiment-article-heading" style="font-size:37px">
+                Rectifier Circuits
+            </header><!-- Navigation menu is useful to organize the view of 
+      multiple sections inside the article-->
+
+            <nav class="default" id="experiment-article-navigation">
+                <ul id="experiment-article-navigation-menu">
+                    <!-- The menu can be dynamically generated to contain 
+          the headings of your sections or instead write the 
+          menu items of your choice individually enclosedu in 
+          &lt;li&gt; tag as shown below-->
+                </ul>
+            </nav><!-- All the sections of your lab or experiment can be 
+      enclosed together with a div element as shown below-->
+
+            <div id="experiment-article-sections">
+        <!-- vinay: not working properly    
+			<p class="MsoNormal" style="line-height: 150%; text-align: right; margin-right: 1cm;"><a href="../index.html#lab-article-section-2"><span style="font-family: arial,helvetica,sans-serif; font-size: medium;">
+                     Back To Experiment List</span></a></p>            
+            -->
+                <!-- First section of the article-->
+
+         <section id="experiment-article-section-1">
+                    <div class="icon" id="experiment-article-section-1-icon">
+                    <!-- Enclose the icon image of your lab -->
+                    <img src="../images/introduction.jpg"></div>
+                    <!-- The heading for the section can be enclosed in a 
+          div tag. -->
+
+                    <div class="heading" id="experiment-article-section-1-heading">
+                        Aim
+                    </div><!-- Write the section content inside a paragraph 
+          element, You can also include images with &lt;img&gt; tag -->
+
+                    <div class="content" id="experiment-article-section-1-content">
+                        <div class="divContent">
+                        
+         <!--vinay: one more example of adding aim with different font and method-->
+						<!--                     
+                           <h2 style="color: Red;"><strong style=
+                            "text-decoration: underline"><span style=
+                            "font-family: arial,helvetica,sans-serif; color: rgb(255, 0, 0);">
+                            <span style=
+                            "font-size: large;">Aim</span></span></strong></h2>
+							-->
+                            <p>&nbsp;</p>
+			<!--vinay: here we can define the extra link for navigation to some other page-->
+                       <!--     <p class="MsoNormal" style=
+                            "line-height: 150%; text-align: right;"><a href=
+                            "http://coep.vlab.co.in/?sub=33&amp;brch=91"><span style="font-family: arial,helvetica,sans-serif; font-size: medium;">
+                            Back To Experiment List</span></a></p>
+								-->
+                            <p><span style=
+                            "font-size: medium; font-family: arial,helvetica,sans-serif; color: rgb(0, 0, 0);">
+                            &nbsp;&nbsp;&nbsp;To understand basic principals of diodes</span></p>
+
+                           
+                            <p>&nbsp;</p>
+			<!-- vinay: other example how we can add more tags like objectives with different fonts-->
+                     <!--       <p><span style=
+                            "font-family: arial,helvetica,sans-serif; color: rgb(0, 0, 0);">
+                            <strong><span style=
+                            "font-size: large;">Objective:-</span></strong></span></p>
+
+                            <p>&nbsp;</p>
+
+                            <p>&nbsp;</p>
+
+                            <p><!-- p { margin-bottom: 0.21cm; } --> <!--</p>-->
+							<!--
+                            <p style="margin-bottom: 0cm;"><span style=
+                            "font-family: arial,helvetica,sans-serif; font-size: medium; color: rgb(51, 51, 51);">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.
+                            Study static and dynamic characteristics of
+                            RTD</span></p>
+
+                            <p style="margin-bottom: 0cm;">&nbsp;</p>
+
+                            <p style="margin-bottom: 0cm;"><span style=
+                            "font-family: arial,helvetica,sans-serif; font-size: medium; color: rgb(51, 51, 51);">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.
+                            Study effect of various parameters on RTD
+                            performance<br></span></p>
+
+                            <p style="margin-bottom: 0cm;">&nbsp;</p>
+
+                            <p style="margin-bottom: 0cm;">&nbsp;</p>
+
+                            <p style="margin-bottom: 0cm;">&nbsp;</p>
+
+                            <p style="margin-bottom: 0cm;">&nbsp;</p>
+						-->
+                            <p><span style=
+                            "font-family: arial,helvetica,sans-serif; font-size: medium; color: rgb(0, 0, 0);">
+                            <br></span></p>
+                        </div>
+                    </div>
+                </section>
+        
+         <section id="experiment-article-section-2">
+                    <div class="icon" id="experiment-article-section-2-icon">
+                    <!-- Enclose the icon image of your lab. -->
+                    <img src="../images/theory.jpg"></div>
+                    <!-- The heading for the section can be enclosed in a 
+        div tag. -->
+
+                <div class="heading" id="experiment-article-section-2-heading">
+                       Theory
+                </div><!-- Write the section content inside a paragraph 
+        element, we can also include images with &lt;img&gt; tag -->
+		
+                    <div class="content" id="experiment-article-section-2-content">
+           					 <div class="divContent">
+           					 
+           					 <p class="PreformattedText"><span lang="EN-IN"
+                            style=
+                            'font-size: 12pt; font-family: "Verdana","sans-serif";'>
+                            &nbsp;</span><b><span style=
+                            'font-size: 12pt; line-height: 150%; font-family: "Verdana","sans-serif"; color: black;'>
+                            Introduction</span></b></p>
+    					 
+           				<p class="MsoNormal" style=
+                            "margin-bottom: 0.0001pt; line-height: 150%;">
+                            <span style=
+                            'font-size: 12pt; line-height: 150%; font-family: "Verdana","sans-serif"; color: black;'>
+                   We have studied the operation and I/V characteristics of a PN junction diode in the previous experiment. We have seen that the diode can conduct only when it is forward biased and blocks when it is reversed biased.
+						 This property of diode makes it an essential component of DC power supplies which are used to power electronic systems and circuits.
+						 The block diagram of a typical DC power supply is shown in Fig.1.</span></p>	     					 
+           			
+           				<!--<p class="MsoNormal" style=
+                            "line-height: 50%; text-align: center;">
+                            <img alt="" src= "filters/fig1.png"  width="25" height="25" ></p>  	 -->
+                            
+                            <!--vinay: image 1-->
+                        <div align="center"><img alt="" src= "theoryimages/fig1.png" style="width:500px;height:300px;"></div>              					 
+           					
+           					 <p class="MsoNormal" style=
+                            "margin-bottom: 0.0001pt; line-height: 150%;">
+                            <span style=
+                            'font-size: 12pt; line-height: 150%; font-family: "Verdana","sans-serif"; color: black;'>
+                   The transformer is used to step down the AC mains voltage (230V, 50 Hz) to desired voltage level by controlling the turns ratio N2:N1. The secondary voltage, Vs is 230(N2/N1). The transformer also provides electrical isolation to the electronic system from AC mains.
+The rectifier converts the AC voltage to pulsating DC, which is smoothened by filter circuit. The output voltage of the power supply is expected remain constant against variations in the load current or variations in input voltage.  This is accomplished by using a suitable voltage regulator.
+In this experiment, we will study three different types of rectifiers with capacitor filter.  </span></p>	
+	
+	<br>     
+     
+      <p class="PreformattedText"><span lang="EN-IN"
+                            style='font-size: 12pt; font-family: "Verdana","sans-serif";'>
+                            &nbsp;</span><b><span style=
+                            'font-size: 12pt; line-height: 150%; font-family: "Verdana","sans-serif"; color: black;'>
+                            Half Wave Rectifier</span></b></p>
+                            
+                            
+                            
+     <p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 150%;"><span style='font-size: 12pt; line-height: 150%; font-family: "Verdana","sans-serif"; color: black;'>
+                   This is the simplest rectifier that uses a single diode and a load resistor. Fig. 2 shows the circuit diagram for a half wave rectifier.</span></p>    					 
+         				
+         					<!--vinay: image 2--> 
+							<div align="center"><img alt="" src= "theoryimages/fig2.png" style="width:350px;height:250px;"></div>           					
+         				<!--	<p class="MsoNormal" style=
+                            "line-height: 150%; text-align: center;">
+                            <img alt="" height="100" src= "theoryimages/fig2.png"  width="261"></p>  -->
+         					 
+		<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 150%;">
+		<span style='font-size: 12pt; line-height: 150%; font-family: "Verdana","sans-serif"; color: black;'>
+                  The diode is forward biased during each positive half cycle causing
+           					 current to flow in the circuit. This current results in voltage VOUT across the resistor RL. 
+           					 The waveform of VOUT with respect to VS is shown in Fig.3. </span></p>					 
+           					 
+           					 <!--vinay:image 3-->
+        <div align="center"><img alt="" src= "theoryimages/fig3.png" style="width:500px;height:300px;"></div>           					 
+           					 
+       <p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 150%;">
+			<span style='font-size: 12pt; line-height: 150%; font-family: "Verdana","sans-serif"; color: black;'>
+                  The output voltage is pulsating DC which has a significant AC component and DC component which is the average value of VOUT. This kind of voltage is not suitable as a DC supply.
+                   A simple way to make the output voltage smooth is to connect a filter capacitor across the output terminals.  </span></p>    					 
+           				
+           				<!--vinay:image 4-->	 
+           				<div align="center"><img alt="" src= "theoryimages/fig4.png" style="width:300px;height:250px;"></div>
+           				
+        <p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 150%;">
+			<span style='font-size: 12pt; line-height: 150%; font-family: "Verdana","sans-serif"; color: black;'>
+                  During positive half cycle as Vs increases, the diode D conducts allowing 
+                  the capacitor to charge to peak voltage of the sinusoid. After the peak,
+                   the voltage Vs starts decreasing making the anode of the diode at lesser 
+                   voltage than cathode as the capacitor C holds the voltage at cathode at the peak voltage.
+                    This reverse biases the diode D and the capacitor C starts discharging through RL till the voltage across 
+                    (which is the voltage at the cathode) it becomes less than Vs which is rising sinusoid. 
+                    The diode then gets forward biased and starts conducting till the peak are reached and this cycle continues.
+                    The charging and discharging of the capacitor causes <b>ripple voltage</b> in the output.
+                   Larger capacitor (and /or RL) results in slower discharge and “flat” output giving rise to less ripple content.  </span></p>   
+     <p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 150%;">
+      <span style='font-size: 12pt; line-height: 150%; font-family: "Verdana","sans-serif"; color: black;'>
+                 <b> Ripple factor:</b> Ripple factor is a measure of effectiveness of a rectifier circuit. 
+                It is defined as the ratio of RMS value of the AC component 
+                (ripple component) Irrms in the output waveform to the DC component VDC in the output waveform.    </span></p>                
+
+                <!--vinay: equ 1-->
+                <div align="center"><img alt="" src= "theoryimages/equ1.png" style="width:250px;height:160px;"></div>
+                
+        <p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 150%;">
+<span style='font-size: 12pt; line-height: 150%; font-family: "Verdana","sans-serif"; color: black;'>
+                 We can measure the value of RMS component of overall output waveform from 
+                 which we can estimate the value of Irrms.We get,        </span></p>
+                
+                 <!--vinay:equ 2-->
+                 <div align="center"><img alt="" src= "theoryimages/equ2.png" style="width:500px;height:140px;"></div>
+                   
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 150%;">
+<span style='font-size: 12pt; line-height: 150%; font-family: "Verdana","sans-serif"; color: black;'>
+                   For half wave rectifier,</span></p>
+                  
+                   <!--vinay: equ 3 and 4-->
+						<div align="center"><img alt="" src= "theoryimages/equ3,4.png" style="width:200px;height:200px;"></div>
+						
+                   <p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 150%;">
+<span style='font-size: 12pt; line-height: 150%; font-family: "Verdana","sans-serif"; color: black;'>
+                   <b>This leads to ripple factor r =1.21 for half wave rectifier.</b>
+The ripple factor can be significantly reduced using a filter capacitor.
+For a half wave rectifier with filter capacitor, ripple factor is given by,</span></p>
+                 
+                   <!--vinay: equ 5-->
+                   <div align="center"><img alt="" src= "theoryimages/equ5.png" style="width:200px;height:160px;"></div>
+                   
+                   <p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 150%;">
+<span style='font-size: 12pt; line-height: 150%; font-family: "Verdana","sans-serif"; color: black;'>
+                   Where f is the frequency of pulsating DC which in this case is same as that of AC mains.
+The value of ripple factor can also be estimated from the waveform of the output voltage. </span></p>
+                   
+                   <!--vinay: equ 6-->
+                   <div align="center"><img alt="" src= "theoryimages/equ6.png" style="width:400px;height:160px;"></div>
+                   
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 150%;">
+<span style='font-size: 12pt; line-height: 150%; font-family: "Verdana","sans-serif"; color: black;'>
+                  Where Vp is the peak value of the output voltage and Vrpp is peak to peak value of the ripple voltage. </span></p>
+                   
+                   <!--vinay: fig 5-->
+                   <div align="center"><img alt="" src= "theoryimages/fig5.png" style="width:500px;height:300px;"></div>
+                   
+                   <p class="PreformattedText"><span lang="EN-IN"
+                            style=
+                            'font-size: 12pt; font-family: "Verdana","sans-serif";'>
+                            &nbsp;</span><b><span style=
+                            'font-size: 12pt; line-height: 150%; font-family: "Verdana","sans-serif"; color: black;'>
+                            Full wave rectifier with centretapped transformer</span></b></p>
+                            
+                     <!--vinay:fig 6-->
+                   <div align="center"><img alt="" src= "theoryimages/fig6.png" style="width:500px;height:300px;"></div>
+                   
+                   <p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 150%;">
+<span style='font-size: 12pt; line-height: 150%; font-family: "Verdana","sans-serif"; color: black;'>
+                   The circuit consists of a center-tapped transformer, followed by the rectiﬁer formed by two 
+                   diodes D1 and D2, and ﬁnally the load R with a capacitor ﬁlter C. 
+                   The circuit is designed such that the current through the load is always 
+                   in the same direction during both the half cycles.
+
+						Assume that the capacitor is not connected initially. Due to the center tap rectiﬁer, 
+				during the positive half cycle of the input Vs, A is positive with respect to B, 
+			hence diode D1 will be forward biased and D2 will be reverse biased. 
+			This results in the current flowing from A-D1-R-B-A. In negative half cycle, 
+			C is positive with respect to B.  This makes C positive with respect to B causing diode D2 to get forward biased making
+ 			the current flow from C-D2-R-B-C.Thus in both the half cycles the current through R flows in the 
+ 			same direction resulting in pulsating DC across R.</span></p>
+                   
+                   <!--vinay:fig 7-->
+                   <div align="center"><img alt="" src= "theoryimages/fig7.png" style="width:500px;height:280px;"></div>	
+                                      
+
+   <p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 150%;">
+<span style='font-size: 12pt; line-height: 150%; font-family: "Verdana","sans-serif"; color: black;'>
+                   <b>With capacitor filter</b> </span></p>                
+                   
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 150%;">
+<span style='font-size: 12pt; line-height: 150%; font-family: "Verdana","sans-serif"; color: black;'>
+                   During the positive half cycle, capacitor C will charge to the peak of the input waveform 
+                   while the load R is being supplied current through D1. When the input starts to go below its peak value, 
+                   the voltage across C will cause D1 to be reverse biased, thus disconnecting the rectiﬁer from the load. 
+                   The capacitor will then provide the necessary current for the load. The rate of potential drop across 
+                   C will be based on the values of R & C. 
+
+						During the negative half cycle, diode D2 will initially be reverse biased due to voltage across C. 
+						When the voltage at the input crosses the dropping voltage across C, D2 will be forward biased. 
+						Now the load is supplied current by the input while simultaneously charging C. This continues till 
+						the negative peak of the input waveform, after which D2 will be reverse biased. The next positive cycle is
+						 similar to the previous negative cycle with diode D1 being forward biased when the input voltage crosses the voltage across C. 
+						Capacitor C ensures that the voltage across load R remains close to the peak of the input voltage. </span></p>
+   
+   <br>
+   <p class="PreformattedText"><span lang="EN-IN"
+                            style=
+                            'font-size: 12pt; font-family: "Verdana","sans-serif";'>
+                            &nbsp;</span><b><span style=
+                            'font-size: 12pt; line-height: 150%; font-family: "Verdana","sans-serif"; color: black;'>
+                           Bridge Rectifier </span></b></p>        				
+           	
+   <p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 150%;">
+<span style='font-size: 12pt; line-height: 150%; font-family: "Verdana","sans-serif"; color: black;'>
+                  Figure shows the circuit of diode bridge rectifier. The circuit uses four diodes D1, D2, D3 and D4 connected in the form of bridge.</span></p>       	
+           	
+						<!--vinay:fig 8-->
+                   <div align="center"><img alt="" src= "theoryimages/fig8.png" style="width:500px;height:360px;"></div>	  
+                            	
+   <p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 150%;">
+<span style='font-size: 12pt; line-height: 150%; font-family: "Verdana","sans-serif"; color: black;'>
+                  During the positive cycle of Vs, point A is positive with respect to B causing diode D1 and D2 to forward bias and D2 and D4 to get reversed biased.
+                   This results in the current to flow from A, through D1, R, D2, B to A. </span></p>  
+                   <p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 150%;">
+<span style='font-size: 12pt; line-height: 150%; font-family: "Verdana","sans-serif"; color: black;'>
+                  During negative cycle, the polarities change. Now point B is positive with respect to A causing diodes D3 and D4 to conduct and D1 and D2 to reverse bias.
+                   The resulting current then flows from B through D4, R, D3, A to B. In both the cycles, the current through the load resistor R flows in the same direction ensuring
+                    the pulsating DC across R in both the half cycles of the input voltage. Hence, this is a full wave rectifier.</span></p>  
+                  
+                   <p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 150%;">
+<span style='font-size: 12pt; line-height: 150%; font-family: "Verdana","sans-serif"; color: black;'>
+                  The output voltage can be smoothened by connecting a suitable capacitor across the load resistor as explained in section B.
+                   Figure shows the input output waveforms.</span></p>     
+                   
+                   <!--vinay:fig 9-->
+                   <div align="center"><img alt="" src= "theoryimages/fig9.png" style="width:500px;height:400px;"></div>
+                   
+ <p class="PreformattedText"><span lang="EN-IN"
+                            style=
+                            'font-size: 12pt; font-family: "Verdana","sans-serif";'>
+                            &nbsp;</span><b><span style=
+                            'font-size: 12pt; line-height: 150%; font-family: "Verdana","sans-serif"; color: black;'>
+                           The ripple factor of full wave rectifier (both centre tapped and bridge rectifier) </span></b></p> 	      	
+
+   
+                    <p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 150%;">
+<span style='font-size: 12pt; line-height: 150%; font-family: "Verdana","sans-serif"; color: black;'>
+                  The ripple factor is given by, </span></p>                 
+                  
+                   <!--vinay:equ 7-->
+                   <div align="center"><img alt="" src= "theoryimages/equ7.png" style="width:250px;height:160px;"></div>
+ 
+                   <p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 150%;">
+<span style='font-size: 12pt; line-height: 150%; font-family: "Verdana","sans-serif"; color: black;'>
+                  where Vrrms is RMS value of AC component(ripple) in the rectifier output and VDC is the DC component (average value) of the rectified output.  </span></p> 
+           	                          
+                    <!--vinay:equ 8-->
+                   <div align="center"><img alt="" src= "theoryimages/equ8.png" style="width:300px;height:140px;"></div>       
+ 
+                   <p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 150%;">
+<span style='font-size: 12pt; line-height: 150%; font-family: "Verdana","sans-serif"; color: black;'>
+                           where Vrms is the RMS value of the rectified output. For full wave rectifier,  </span></b></p>       
+                           
+							<!--vinay:equ 9-->
+                   <div align="center"><img alt="" src= "theoryimages/equ9.png" style="width:400px;height:150px;"></div>                            
+ 
+ 
+                   <p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 150%;">
+<span style='font-size: 12pt; line-height: 150%; font-family: "Verdana","sans-serif"; color: black;'>
+                           where, Vm is peak value of the voltage Vs. Substituting these values in (2) we get,  r = 0.483  </span></b></p>    
+                           
+                   <p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 150%;">
+<span style='font-size: 12pt; line-height: 150%; font-family: "Verdana","sans-serif"; color: black;'>
+                           This is a significant improvement in the ripple factor compared to that of a Half wave rectifier (r=1.21). 
+                           However, this pulsating DC is not useful to power electronic circuits as it still has a large AC component. 
+                           The output can be made smooth by using capacitor filter as described in Half Wave rectifier. Try to analyse the circuit in Fig. 3 and the waveforms in Fig 4.
+                            The ripple factor for full wave rectifier with capacitor filter is given by. </span></b></p>      
+                            
+                            <!--vinay:equ 10-->
+                   <div align="center"><img alt="" src= "theoryimages/equ10.png" style="width:250px;height:160px;"></div>  
+  
+                   <p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 150%;">
+<span style='font-size: 12pt; line-height: 150%; font-family: "Verdana","sans-serif"; color: black;'>
+                           where   f is the frequency of the signal Vs  </span></b></p>                  
+                                                          
+           	
+           		<!--<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: 150%;">
+<span style='font-size: 12pt; line-height: 150%; font-family: "Verdana","sans-serif"; color: black;'>
+                   </span></p>	 -->   			 
+           					 </div>
+                    </div>
+                </section>
+
+         <section id="experiment-article-section-3">
+                
+                    <div class="icon" id="experiment-article-section-3-icon">
+                    <!-- Enclose the icon image of your lab. -->
+                    <img src="../images/theory.jpg"></div>
+
+                    <div class="heading" id="experiment-article-section-3-heading">
+                        PreTest
+                    </div>
+
+                    <div class="content" id="experiment-article-section-3-content">
+                        <div class="divContent">                                               
+
+
+                    <!--vinay: this is how we can have some equations
+                            <p class="MsoNormal" style=
+                            "margin-bottom: 0.0001pt; line-height: 150%;">
+                            <span style=
+                            'font-size: 12pt; line-height: 150%; font-family: "Verdana","sans-serif"; color: black;'>
+                            &nbsp;</span><span style=
+                            'font-size: 12pt; line-height: 150%; font-family: "Verdana","sans-serif"; color: black;'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            R = V/I</span></p> -->
+						
+						<!--vinay: designing the quiz-->
+				
+							<iframe frameborder="0" height="800" src="quiz.html" width="900"></iframe>
+                        
+					</div>
+					</div>
+					</section>
+                           
+         <section id="experiment-article-section-4">
+                    <div class="icon" id="experiment-article-section-4-icon">
+                    <!-- Enclose the icon image of your lab.-->
+                    <img src="../images/simulation.jpg"></div>
+
+                    <div class="heading" id="experiment-article-section-4-heading">
+                        Interactive Tutorial
+                    </div>
+
+                    <div class="content" id="experiment-article-section-4-content">
+                        <div class="divContent">
+              <!--vinay: if we want to give some external link for simulation exercise
+                            <p><a href=
+                            "http://coepvlab.ac.in:8080/COEP/Vlabs/Simulators/ElectricalLab/SensorLab/Rtd/index.html"
+                            target="_blank">External link for Simulator</a></p>-->
+
+							<!--		<iframe frameborder="0" height="480" src="pn-junction.html" width="853"></iframe>     -->
+						
+			<!--	<div align="center">	<applet code="Junction_diode.class" width=765 height=470
+					archive="pndiode.jar" align="center" alt="Your browser understands the
+								&lt;APPLET&gt; tag but isn't running the applet, for some reason.">     </applet> 
+								 </div>  -->
+								
+							<div align="center">
+					    <a href="interactive_tutorial/halfwave.html" target="myapplet" style="text-decoration:none">
+   					<input type="button" value="Half Wave Rectifier">
+						</a>
+						<a href="interactive_tutorial/fullwave.html" target="myapplet" style="text-decoration: none">
+   						<button>Full Wave Rectifier</button>
+						</a>
+							<a href="interactive_tutorial/bridge.html" target="myapplet" style="text-decoration: none">
+   						<button>Bridge Rectifier</button>
+								</a>
+							</div>
+							<br>
+ 							<div align="center" bgcolor="red">
+							<iframe src="" width="785px" height="490px" scrolling="no" bgcolor="red" name="myapplet" frameborder="1" style="background-color:#FEFEFE" allowtransparency="true"></iframe>
+							</div>	
+															
+								        
+                       
+                        </div>
+                    </div>
+                </section>
+
+                                      
+			<section id="experiment-article-section-5">
+                    <div class="icon" id="experiment-article-section-5-icon">
+                    <!-- Enclose the icon image of your lab.-->
+                    <img src="../images/manual.jpg"></div>
+                    <div class="heading" id="experiment-article-section-5-heading">
+                       Simulator
+                    </div>
+
+                    <div class="content" id="experiment-article-section-5-content">
+                   <!--   
+                     <div align="center">	<applet code=SpiceRectifier.class width=850 height=550
+					align="center" alt="Your browser understands the
+								&lt;APPLET&gt; tag but isn't running the applet, for some reason.">     </applet>        
+                    </div> 
+                    -->
+                    
+							<div align="center">
+					   <a href="SpiceHalfWave/halfwave.html" target="myapplet2" style="text-decoration:none">
+   					<input type="button" value="Half Wave Rectifier">
+						</a>
+						<a href="SpiceFullWave/fullwave.html" target="myapplet2" style="text-decoration:none">
+   					<input type="button" value="Full Wave Rectifier">
+						</a>
+						<a href="SpiceHalfWave/halfwave.html" target="myapplet2" style="text-decoration:none">
+   					<input type="button" value="Bridge Rectifier">
+						</a>
+						<!--<a href="SpiceFullWave/fullwave.html" target="myapplet2" style="text-decoration: none">
+   						<button>Full Wave Rectifier</button>
+						</a>
+							<a href="interactive_tutorial/bridge.html" target="myapplet2" style="text-decoration: none">
+   						<button>Bridge Rectifier</button>
+								</a>-->
+							</div>
+							<br>
+ 							<div align="center">
+							<iframe src="" width="870px" height="570px" scrolling="no" name="myapplet2" frameborder="2" style="background-color:#FEFEFE" allowtransparency="true"></iframe>
+							</div>	     
+                               
+                    
+                    
+                    </div>
+                </section>
+
+         <section id="experiment-article-section-6">
+                    <div class="icon" id="experiment-article-section-6-icon">
+                    <!-- Enclose the icon image of your lab.-->
+                    <img src="../images/quizzes.jpg"></div>
+
+                    <div class="heading" id=
+                    "experiment-article-section-6-heading">
+                        PostTest
+                    </div>
+
+                    <div class="content" id=
+                    "experiment-article-section-6-content">
+                        <div class="divContent">
+                           
+                                                  
+                        </div>
+                    </div>
+                </section>
+                
+         <section id="experiment-article-section-7">
+                    <div class="icon" id="experiment-article-section-7-icon">
+                    <!-- Enclose the icon image of your lab.-->
+                    <img src="../images/quizzes.jpg"></div>
+
+                    <div class="heading" id=
+                    "experiment-article-section-7-heading">
+                        Additional Resources
+                    </div>
+
+                    <div class="content" id=
+                    "experiment-article-section-7-content">
+                        <div class="divContent">
+                           
+                                                  
+                        </div>
+                    </div>
+                </section>       
+			
+
+            <br>
+			
+            </div>
+       
+        </article>
+	
+
+        <footer  class="footer">
+            <!-- Put the content here -->
+            <div style="margin-left:40%; margin-right:40% ">
+            <a href="../license/index.html" target="_blank" style="margin:auto"> Licensing Terms </a>
+            </div>
+      </footer> 
+    </div>
+</body>
+</html>

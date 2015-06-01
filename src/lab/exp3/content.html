@@ -1,0 +1,264 @@
+<!-- This file needs to be edited by the lab developer to suit
+the requirements of their lab in particular.-->
+<!-- Add class="default" to include any element as it is
+specified in default.html. 
+Do not include class="default" to the elements that you want to
+edit -->
+<!DOCTYPE html>
+<html>
+<head>
+<script src="quiz.js"></script>
+    <title></title>
+</head>
+
+<body>
+    <div id="experiment">
+        <!-- The Experiment Document Container-->
+        <!-- The lab Header contains the logo and the name of the lab,
+  usually displayed on the top of the page-->
+
+        <header id="experiment-header">
+            <div class="logo" id="experiment-header-logo">
+            <!-- Enclose the logo image of your lab or write it in 
+      text-->
+            <img src="../images/logo.jpg"></div>
+
+            <div class="heading" id="experiment-header-heading">
+                <!-- Write the name of your lab and link it to the home 
+      page of your lab (h1 tag is preferred while writing your 
+      lab name)-->
+                <a href="../index.html">Electronics Devices and Circuits</a>
+            </div><!-- Add any additional element you want to add to the lab 
+    header, For example : Help (Enclosing them with suitable 
+    div is recommended)-->
+        </header><!-- The lab article is the main content area where all the 
+  experiment content sits-->
+
+        <article id="experiment-article">
+            <!-- The lab article has an header, optional navigational 
+    menu, number of sections, an optional sidebar and a closing 
+    footer-->
+            <div class="breadcrumb" id="experiment-article-breadcrumb"></div>
+		<!--vinay: i have changed the font size for header tag to fit the panel-->
+            <header class="heading" id="experiment-article-heading" style="font-size:37px">
+                Wave Shaping Circuits using Diodes
+            </header><!-- Navigation menu is useful to organize the view of 
+      multiple sections inside the article-->
+
+            <nav class="default" id="experiment-article-navigation">
+                <ul id="experiment-article-navigation-menu">
+                    <!-- The menu can be dynamically generated to contain 
+          the headings of your sections or instead write the 
+          menu items of your choice individually enclosedu in 
+          &lt;li&gt; tag as shown below-->
+                </ul>
+            </nav><!-- All the sections of your lab or experiment can be 
+      enclosed together with a div element as shown below-->
+
+            <div id="experiment-article-sections">
+        <!-- vinay: not working properly    
+			<p class="MsoNormal" style="line-height: 150%; text-align: right; margin-right: 1cm;"><a href="../index.html#lab-article-section-2"><span style="font-family: arial,helvetica,sans-serif; font-size: medium;">
+                     Back To Experiment List</span></a></p>            
+            -->
+                <!-- First section of the article-->
+
+         <section id="experiment-article-section-1">
+                    <div class="icon" id="experiment-article-section-1-icon">
+                    <!-- Enclose the icon image of your lab -->
+                    <img src="../images/introduction.jpg"></div>
+                    <!-- The heading for the section can be enclosed in a 
+          div tag. -->
+
+                    <div class="heading" id="experiment-article-section-1-heading">
+                        Aim
+                    </div><!-- Write the section content inside a paragraph 
+          element, You can also include images with &lt;img&gt; tag -->
+
+                    <div class="content" id="experiment-article-section-1-content">
+                        <div class="divContent">
+
+                             <p class="MsoNormal" style=
+                            "margin-bottom: 0.0001pt; line-height: 150%;">
+                            <span style=
+                            'font-size: 12pt; line-height: 150%; font-family: "Verdana","sans-serif"; color: black;'></span></p>	
+                   			<ol style=
+                            'font-size: 12pt; line-height: 150%; font-family: "Verdana","sans-serif"; color: black;'>
+											<li>To study the operation of Wave Shaping using Diode
+												<ul>
+												<li>Series Clipper</li>
+												<li>Shunt Clipper</li>
+												</ul>											
+											</li>
+																				                            
+                            </ol>  
+	
+                            
+	
+                            <p><span style="font-family: arial,helvetica,sans-serif; font-size: medium; color: rgb(0, 0, 0);">
+                            <br></span></p>
+                        </div>
+                    </div>
+                </section>
+        
+         <section id="experiment-article-section-2">
+                    <div class="icon" id="experiment-article-section-2-icon">
+                    <!-- Enclose the icon image of your lab. -->
+                    <img src="../images/theory.jpg"></div>
+ 
+                <div class="heading" id="experiment-article-section-2-heading">
+                       Theory
+                </div>
+  
+		
+                    <div class="content" id="experiment-article-section-2-content">
+           					 <div class="divContent">
+           					 
+           						<iframe frameborder="0" height="900" src="Theory.pdf" width="940"></iframe>
+                        
+            
+           					 </div>
+                    </div>
+                </section>
+
+         <section id="experiment-article-section-3">
+                
+                    <div class="icon" id="experiment-article-section-3-icon">
+                    <!-- Enclose the icon image of your lab. -->
+                    <img src="../images/theory.jpg"></div>
+
+                    <div class="heading" id="experiment-article-section-3-heading">
+                        Pre-Test
+                    </div>
+
+                    <div class="content" id="experiment-article-section-3-content">
+                        <div class="divContent">                                               
+						
+						<!--vinay: designing the quiz-->
+				
+							<iframe frameborder="0" height="800" src="quiz.html" width="900"></iframe>
+                        
+					</div>
+					</div>
+					</section>
+                           
+         <section id="experiment-article-section-4">
+                    <div class="icon" id="experiment-article-section-4-icon">
+                    <!-- Enclose the icon image of your lab.-->
+                    <img src="../images/simulation.jpg"></div>
+
+                    <div class="heading" id="experiment-article-section-4-heading">
+                        Interactive Tutorial
+                    </div>
+
+                    <div class="content" id="experiment-article-section-4-content">
+                        <div class="divContent">
+								
+							<div align="center">
+					    <a href="interactive_tutorial/SeriesClipper.html" target="myapplet" style="text-decoration:none">
+   					<input type="button" value="Series Clipper">
+						</a>
+						 <a href="interactive_tutorial/ShuntClipper.html" target="myapplet" style="text-decoration:none">
+   					<input type="button" value="Shunt Clipper">
+						</a>
+						 <a href="interactive_tutorial/TwoDiodeClipper.html" target="myapplet" style="text-decoration:none">
+   					<input type="button" value="Two Diode Clipper">
+						</a>
+							</div>
+							<br>
+ 							<div align="center" bgcolor="red">
+							<iframe src="" width="785px" height="490px" scrolling="no" bgcolor="red" name="myapplet" frameborder="1" style="background-color:#FEFEFE" allowtransparency="true"></iframe>
+							</div>	
+													
+								                            
+                        </div>
+                    </div>
+                </section>
+                                   
+			<section id="experiment-article-section-5">
+                    <div class="icon" id="experiment-article-section-5-icon">
+                    <!-- Enclose the icon image of your lab.-->
+                    <img src="../images/manual.jpg"></div>
+                    <div class="heading" id="experiment-article-section-5-heading">
+                       Simulator
+                    </div>
+
+                    <div class="content" id="experiment-article-section-5-content">
+                    
+                            
+                            <span style=
+                            'font-size: 12pt; line-height: 100%; font-family: "Verdana","sans-serif"; color: black;'>
+									Procedure:                          
+                            </span>
+                            <ol style=
+                            'font-size: 12pt; line-height: 100%; font-family: "Verdana","sans-serif"; color: black;'>
+											<li>Load the netlist by clicking on "Load Netlist"	</li>
+											<li>Change the parameters from select box and click on "Run" to see the respective output</li>	
+											<li>In netlist Area you can check which parameter is being changed in spice file</li>
+											<li>Please go to Additional Resources to download netlist</li>											                            
+                            </ol>  
+							<br>
+ 							<div align="center">
+							<iframe src="simulator/SpiceWaveShaping/SpiceWaveShaping.html" width="870px" height="570px" scrolling="no" name="myapplet2" frameborder="2" style="background-color:#FEFEFE" allowtransparency="true"></iframe>
+							</div>	     
+    
+                    </div>
+                </section>
+
+         <section id="experiment-article-section-6">
+                    <div class="icon" id="experiment-article-section-6-icon">
+                    <!-- Enclose the icon image of your lab.-->
+                    <img src="../images/quizzes.jpg"></div>
+
+                    <div class="heading" id=
+                    "experiment-article-section-6-heading">
+                        Post-Test
+                    </div>
+
+                    <div class="content" id=
+                    "experiment-article-section-6-content">
+                        <div class="divContent">
+                          
+                          <iframe frameborder="0" height="900" src="Postlab.pdf" width="940"></iframe> 
+                                                  
+                        </div>
+                    </div>
+                </section>
+                
+         <section id="experiment-article-section-7">
+                    <div class="icon" id="experiment-article-section-7-icon">
+                    <!-- Enclose the icon image of your lab.-->
+                    <img src="../images/quizzes.jpg"></div>
+
+                    <div class="heading" id=
+                    "experiment-article-section-7-heading">
+                        Additional Resources
+                    </div>
+
+                    <div class="content" id=
+                    "experiment-article-section-7-content">
+                        <div class="divContent">
+                           
+                            <ul style='font-size: 12pt; line-height: 100%; font-family: "Verdana","sans-serif"; color: black;'>
+ <li><a href="resources/spice.cir" target="_blank">Download Netlist</a></li>
+   </ul>                         
+                        </div>
+                    </div>
+                </section>       
+			
+
+            <br>
+			
+            </div>
+       
+        </article>
+	
+
+        <footer  class="footer">
+            <!-- Put the content here -->
+            <div style="margin-left:40%; margin-right:40% ">
+            <a href="../license/index.html" target="_blank" style="margin:auto"> Licensing Terms </a>
+            </div>
+      </footer> 
+    </div>
+</body>
+</html>

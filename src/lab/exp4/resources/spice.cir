@@ -1,0 +1,39 @@
+To Study BJT Output Character
+
+*including the model file
+.include bc547.txt
+
+*declaring the model
+Q1 3 2 5 QBC547BP
+
+*netlist for the circuit
+Rb 1 2 50k
+Rc 4 6 100
+Re 5 0 10
+
+*DC voltage source declaration
+vin 1 0 dc 5v
+
+*DC voltage source VCC
+vcc 6 0 dc 0 
+
+*defining DC transition of step 0.1 volt between 0 to 15 volt
+.dc vcc 0 12 0.1 vin 0 5 1
+
+*DC voltage source , this will be used for measuring current between node 4 and 3
+vmeas 4 3 dc 0
+
+*defining control statement
+.control
+
+*run the simulation
+run
+
+*plot the output graph between current i(vmeas) and voltage v(3,5) i.e. voltage different between v(3) and v(5)
+plot i(vmeas) vs v(3,5)
+
+*end control statement
+.endc
+
+*end of the netlist
+.end

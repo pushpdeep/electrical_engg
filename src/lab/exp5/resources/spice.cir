@@ -1,0 +1,54 @@
+To Study BJTBiasing
+
+*including the model file
+.include bc547.txt
+
+*declaring the model
+Q1 3 2 4 QBC547BP
+
+*netlist for the circuit
+
+Rc 1 3 1.8k
+R1 1 2 4.7k
+R2 2 0 5.6k
+
+Re 4 0 1k
+C1 5 2 10u
+C2 3 6 47u
+R3 6 0 10k
+
+Ce 4 0 0.1u
+
+*DC voltage source VCC
+vcc 1 0 dc 12 
+
+*declaring AC voltage sources/inputs(for DC Analysis)
+Vin 5 0 sin(0mv 50mV 10kHz)
+
+*declaring transient analysis(for DC Analysis)
+.tran 0.001m 1m 0.75m
+
+*declaring AC voltage source(for AC Analysis)
+*Vin 5 0 ac 0.05V
+
+*start the AC analysis(for AC Analysis)
+*.ac dec 10 1khz 1Ghz
+
+*control statement for the simulation
+.control
+
+*run the simulation
+run
+
+*plot output curve for input and output signals(for DC Analysis)
+plot v(5),v(6)
+
+*plot output curve for DB voltage at node 3(for AC Analysis)
+*plot db(v(6))
+
+*end of the control statement
+.endc
+
+*end of the netlist
+.end
+

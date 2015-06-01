@@ -1,0 +1,41 @@
+Low pass filter with op amp 
+
+*include the model file
+.include UA741.txt
+
+*declaring model
+*  NON-INVERTING INPUT
+*  | INVERTING INPUT
+*  | | POSITIVE POWER SUPPLY
+*  | | | NEGATIVE POWER SUPPLY
+*  | | | | OUTPUT
+*  | | | | |
+X1 1 2 3 4 5 UA741
+*declaring capacitor between nodes 1,0
+
+C 1 0 0.01uF
+*declaring resisters
+R 1 6 100K
+R1 2 0 1meg
+R2 2 5 10K
+
+
+Vcc 3 0 dc 15v
+Vee 0 4 dc 15v
+
+*declaring AC voltage source
+V1 6 0 ac 4V
+
+*start the AC analysis
+.ac dec 10 0 1k
+*control statement for simulation
+.control
+*run the simulation
+run
+*plot the output curve between voltage at node 5 and 6 in db
+plot vdb(5) 
+*plot db(v(5)/v(6))
+*end of the control statement
+.endc
+*end of the netlist
+.end

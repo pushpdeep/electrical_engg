@@ -1,0 +1,39 @@
+Inverting Schmitt Trigger
+
+*include the model file
+.include UA741.txt
+
+*declaring model
+*  NON-INVERTING INPUT
+*  | INVERTING INPUT
+*  | | POSITIVE POWER SUPPLY
+*  | | | NEGATIVE POWER SUPPLY
+*  | | | | OUTPUT
+*  | | | | |
+X1 1 2 3 4 5 UA741
+
+*declaring resisters
+R1 1 0 56meg
+R2 1 5 10k
+
+
+*declaring AC voltage source
+Vs 2 0 sin(0 13 50k)
+
+vcc 3 0 dc 7.5
+vee 4 0 dc -7.5
+
+*start the transient analysis
+.tran 0.0001m 0.8m 0.75m
+
+*control statement for simulation
+.control
+*run the simulation
+run
+*plot the output curves of input signal, output signal
+*plot v(5) v(2)
+plot v(5) vs v(2)
+*end of the control statement
+.endc
+*end of the netlist
+.end

@@ -1,0 +1,47 @@
+<html>
+<head><script src="quiz.js"></script></head>
+<body>
+
+<form name = "quiz">
+<ol>
+<li>The rectifier converts AC voltage to pure DC voltage</li>
+<ul>
+<li><input type="radio" name="q1" value="correct">true</input></li>
+<li><input type="radio" name="q1" value="wrong">false</input></li>
+</ul>
+<br>
+<li>In a half wave rectifier with capacitor filter the diode conducts continuously during alternate cycles</li>
+<ul>
+<li><input type="radio" name="q2" value="wrong">true</input></li>
+<li><input type="radio" name="q2" value="correct">false</input></li>
+</ul>
+<br>
+<li>Bridge rectifier is a very effective rectifier as it improves ripple factor on account of four rectifier diodes used in the circuit</li>
+<ul>
+<li><input type="radio" name="q3" value="correct">true</input></li>
+<li><input type="radio" name="q3" value="wrong">false</input></li>
+</ul>
+<br>
+<li>Since the diode/s in rectifiers with filter capacitor conduct current pulses, the output voltage too is in the form of pulses.</li>
+<ul>
+<li><input type="radio" name="q4" value="correct">true</input></li>
+<li><input type="radio" name="q4" value="wrong">false</input></li>
+</ul>
+<br>
+<li>The rectifiers use transformer to transform AC to DC</li>
+<ul>
+<li><input type="radio" name="q5" value="wrong">true</input></li>
+<li><input type="radio" name="q5" value="correct">false</input></li>
+</ul>
+</ol>
+
+<input type="button" value="submit" onClick="checkAllQs()" style= "margin-top:0.5cm; margin-bottom:0.5cm; margin-left:1cm; margin-right:0.5cm"></input>
+<input type="button" value="reset" onClick="reset()" style= "margin-top: 0.5cm;  margin-bottom: 0.5cm; margin-left:0.5cm; margin-right:05cm "></input>
+<br>
+<textarea rows="10" cols="60" name="answerbox" style= "margin-top: 0.5cm;  margin-bottom: 0.5cm; margin-left:1cm; margin-right:1cm;" align="center">Answers will be shown here</textarea>
+
+</form>
+
+</body>
+
+</html>

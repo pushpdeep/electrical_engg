@@ -1,0 +1,44 @@
+Full Wave Rectifier
+
+*declaring model
+.MODEL DIO D( IS=1.8E-14 RS=2 BV=50.0 IBV=1e-4 CJO=2e-12  M=0.333 N=2.06 TT=4.32e-9)
+
+*resister between nodes 1,2
+Rs 1 2 0.0011
+
+*primary winding i.e. inductor 
+Lp 2 0 1mH
+*secondary windings 
+Ls1 3 0 1mH
+Ls2 0 4 1mH
+
+*declaring diodes
+D1 3 5 DIO
+D2 4 5 DIO
+
+R2 5 0 1K
+
+*declaring coupling coefficients between inductors
+Kps  Lp  Ls1  1
+Kps1  Lp  Ls2  1
+Kss  Ls1  Ls2  1
+
+*declaring capacitor
+C1 5 0 0u
+
+*declaring sinusoidal voltage 
+v1 1 0 sin(0 16V 50)
+
+*start the transient analysis
+.tran 0.001m 40m
+
+*control statement for simulation
+.control
+*run the simulation
+run
+*plot the output curve between voltage on node 1 and 5
+plot v(1) v(5)
+*end of the control statement
+.endc
+*end of the netlist
+.end
