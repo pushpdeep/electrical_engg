@@ -54,8 +54,8 @@
 ""
 ],
 "id": "maglev",
-"integration_level": 4,
-"name": "Chemical engineering",
+"integration_level": 6,
+"name": "Electrical Engineering",
 "server-side": true,
 "status": "Released",
 "type": "Simulation"
